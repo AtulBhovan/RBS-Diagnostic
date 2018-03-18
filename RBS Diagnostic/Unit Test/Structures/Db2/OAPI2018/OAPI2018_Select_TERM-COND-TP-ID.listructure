@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:12 PM-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_TERM-COND-TP-ID.listructure">
+  <listructure:struct id="TERM_COND_TP_ID" name="TERM_COND_TP_ID">
+    <properties:properties>
+      <properties:property name="storageLength" type="number">2</properties:property>
+      <properties:property name="displayLength" type="number">2</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+    </properties:properties>
+    <listructure:number id="TERM_COND_TP_ID.TERM_COND_TP_ID" length="4" name="TERM_COND_TP_ID">
+      <properties:properties>
+        <properties:property name="picture" type="string">S9(4)</properties:property>
+        <properties:property name="usage" type="string">computational</properties:property>
+        <properties:property name="signed" type="boolean">true</properties:property>
+        <properties:property name="storageLength" type="number">2</properties:property>
+        <properties:property name="displayLength" type="number">4</properties:property>
+        <properties:property name="integerDigits" type="number">4</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="sqltype" type="number">500</properties:property>
+        <properties:property name="liType" type="string">binary</properties:property>
+      </properties:properties>
+    </listructure:number>
+  </listructure:struct>
+</listructure:listructure>

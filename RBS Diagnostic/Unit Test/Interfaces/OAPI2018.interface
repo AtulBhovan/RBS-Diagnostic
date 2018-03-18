@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:24 PM-->
+<interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Unit%20Test/Interfaces/OAPI2018.interface">
+  <interface:description></interface:description>
+  <interface:argument listructure="../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#Unit%20Test/Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_DFHEIBLK">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_BANK_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_SORT_CODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_REQ_TYPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_ACCOUNT_TYPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_REQ_TYPE_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_INP_SC_ISS_AUTH">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.FILLER0">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_ENV_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.LS_BOAPI218_EFDT">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_INPUT_PARMS.FILLER1">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_RETURN_CODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_SQL_CODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_ERROR_MSG_1">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_ERROR_MSG_2">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_ERROR_MSG_3">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_API_SQLCA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_RESULT">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_RESULT_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_AREA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_UPR_LIMIT">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_LWR_LIMIT">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_PERIOD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_OUP_SC_ISS_AUTH">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_OUP_GEOG_ZONE_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PROFILE_VALUES.LS_BOAPI218_FEAT_TYP_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_PAYU_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_TXT_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_RISK_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_CON_CAP_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_LOYLT_IND_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_LOYALTY_INSCOPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.LS_BOAPI218_CCA_UPR_LIM">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_QUERY_VALUES.FILLER2">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_COMP_THRSHLD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_THSH_TERM">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_COMP_RATE_UPR">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_COMP_RATE_LWR">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_ES_LET_REQ">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_BWD_DUR">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_FWD_DUR">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_QT_ACT_PRD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_PEN_INT_PRD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_PEN_INT_ORG_TRM">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.LS_BOAPI218_PEN_INT_EXT_PRD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_CCD_VARS_PARMS.FILLER3">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LIST_TABLE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:arrayType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_PRODUCT_LIST">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_UPRL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_LWRL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_PERIOD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_FEAT_TYP">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_CAP_DAYS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.LS_BOAPI218_LST_CCA_LIM">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LT_REDEF.LS_BOAPI218_LIST.LS_BOAPI218_LIST.FILLER4">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.LS_BOAPI218_LST_CTR">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_LS-BOAPI218-COMMAREA.listructure#LS_BOAPI218_COMMAREA.LS_BOAPI218_OUTPUT_PARMS.LS_BOAPI218_OUTPUT_DATA.FILLER5">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+</interface:interface>

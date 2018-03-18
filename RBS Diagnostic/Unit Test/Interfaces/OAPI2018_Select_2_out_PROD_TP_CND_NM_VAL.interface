@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:14 PM-->
+<interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Unit%20Test/Interfaces/OAPI2018_Select_2_out_PROD_TP_CND_NM_VAL.interface">
+  <interface:description></interface:description>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_UPPER-THRES.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_UPPER-THRES.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_UPPER-THRES.listructure#UPPER_THRES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_UPPER-THRES.listructure#UPPER_THRES.UPPER_THRES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure#LOWER_THRES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure#LOWER_THRES.LOWER_THRES">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_TIME-PERIOD.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_TIME-PERIOD.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_TIME-PERIOD.listructure#TIME_PERIOD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_TIME-PERIOD.listructure#TIME_PERIOD.TIME_PERIOD">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure#PROD_TP_CND_TX_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure#PROD_TP_CND_TX_VAL.PROD_TP_CND_TX_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_FEATURE-TYPE.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_FEATURE-TYPE.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_FEATURE-TYPE.listructure#FEATURE_TYPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_FEATURE-TYPE.listructure#FEATURE_TYPE.FEATURE_TYPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+  <interface:argument listructure="../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-NM-VAL.listructure#Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-NM-VAL.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-NM-VAL.listructure#PROD_TP_CND_NM_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-NM-VAL.listructure#PROD_TP_CND_NM_VAL.PROD_TP_CND_NM_VAL">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+</interface:interface>

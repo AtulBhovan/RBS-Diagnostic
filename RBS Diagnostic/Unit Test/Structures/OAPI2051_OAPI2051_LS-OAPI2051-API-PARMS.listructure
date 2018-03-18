@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:09 PM-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Unit%20Test/Structures/OAPI2051_OAPI2051_LS-OAPI2051-API-PARMS.listructure">
+  <listructure:struct id="LS_OAPI2051_API_PARMS" name="LS_OAPI2051_API_PARMS">
+    <properties:properties>
+      <properties:property name="storageLength" type="number">31555</properties:property>
+      <properties:property name="displayLength" type="number">31555</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+    </properties:properties>
+    <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_DFHEIBLK" length="85" name="LS_BOAPI251_DFHEIBLK">
+      <properties:properties>
+        <properties:property name="picture" type="string">X(85)</properties:property>
+        <properties:property name="storageLength" type="number">85</properties:property>
+        <properties:property name="displayLength" type="number">85</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="liType" type="string">char</properties:property>
+        <properties:property name="mask" type="string">X(85)</properties:property>
+      </properties:properties>
+    </listructure:string>
+    <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS" name="LS_BOAPI251_INPUT_PARMS">
+      <properties:properties>
+        <properties:property name="storageLength" type="number">149</properties:property>
+        <properties:property name="displayLength" type="number">149</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+      </properties:properties>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYP_FLAG" length="1" name="LS_BOAPI251_REQ_TYP_FLAG">
+        <properties:properties>
+          <properties:property name="picture" type="string">X</properties:property>
+          <properties:property name="storageLength" type="number">1</properties:property>
+          <properties:property name="displayLength" type="number">1</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_ENV_FLAG" length="1" name="LS_BOAPI251_ENV_FLAG">
+        <properties:properties>
+          <properties:property name="picture" type="string">X</properties:property>
+          <properties:property name="storageLength" type="number">1</properties:property>
+          <properties:property name="displayLength" type="number">1</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_BUS_TYP_ID" length="4" name="LS_BOAPI251_BUS_TYP_ID">
+        <properties:properties>
+          <properties:property name="picture" type="string">S9(4)</properties:property>
+          <properties:property name="usage" type="string">computational-3</properties:property>
+          <properties:property name="signed" type="boolean">true</properties:property>
+          <properties:property name="storageLength" type="number">3</properties:property>
+          <properties:property name="displayLength" type="number">4</properties:property>
+          <properties:property name="integerDigits" type="number">4</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">packed</properties:property>
+        </properties:properties>
+      </listructure:number>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.FILLER0" length="17" name="FILLER0">
+        <properties:properties>
+          <properties:property name="filler" type="boolean">true</properties:property>
+          <properties:property name="picture" type="string">X(17)</properties:property>
+          <properties:property name="storageLength" type="number">17</properties:property>
+          <properties:property name="displayLength" type="number">17</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(17)</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYPE" length="1" name="LS_BOAPI251_REQ_TYPE">
+        <properties:properties>
+          <properties:property name="picture" type="string">X</properties:property>
+          <properties:property name="storageLength" type="number">1</properties:property>
+          <properties:property name="displayLength" type="number">1</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYPE_S" length="1" name="LS_BOAPI251_REQ_TYPE_S">
+        <properties:properties>
+          <properties:property name="picture" type="string">X</properties:property>
+          <properties:property name="storageLength" type="number">1</properties:property>
+          <properties:property name="displayLength" type="number">1</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS" name="LS_BOAPI251_SUPP_IDENTIFIERS">
+        <properties:properties>
+          <properties:property name="storageLength" type="number">31</properties:property>
+          <properties:property name="displayLength" type="number">31</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+        </properties:properties>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_SUPP_ID_COMBO_TYP" length="1" name="LS_BOAPI251_SUPP_ID_COMBO_TYP">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BANK_ID" length="3" name="LS_BOAPI251_INP_BANK_ID">
+          <properties:properties>
+            <properties:property name="picture" type="string">S9(3)</properties:property>
+            <properties:property name="usage" type="string">computational-3</properties:property>
+            <properties:property name="signed" type="boolean">true</properties:property>
+            <properties:property name="storageLength" type="number">2</properties:property>
+            <properties:property name="displayLength" type="number">3</properties:property>
+            <properties:property name="integerDigits" type="number">3</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">packed</properties:property>
+          </properties:properties>
+        </listructure:number>
+        <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_SORTCODE" length="7" name="LS_BOAPI251_INP_SORTCODE">
+          <properties:properties>
+            <properties:property name="picture" type="string">S9(7)</properties:property>
+            <properties:property name="usage" type="string">computational-3</properties:property>
+            <properties:property name="signed" type="boolean">true</properties:property>
+            <properties:property name="storageLength" type="number">4</properties:property>
+            <properties:property name="displayLength" type="number">7</properties:property>
+            <properties:property name="integerDigits" type="number">7</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">packed</properties:property>
+          </properties:properties>
+        </listructure:number>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BRND_ID" length="3" name="LS_BOAPI251_INP_BRND_ID">
+          <properties:properties>
+            <properties:property name="picture" type="string">X(3)</properties:property>
+            <properties:property name="storageLength" type="number">3</properties:property>
+            <properties:property name="displayLength" type="number">3</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X(3)</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BANK_INST" length="1" name="LS_BOAPI251_INP_BANK_INST">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_REGION_NO" length="3" name="LS_BOAPI251_INP_REGION_NO">
+          <properties:properties>
+            <properties:property name="picture" type="string">S9(3)</properties:property>
+            <properties:property name="usage" type="string">computational-3</properties:property>
+            <properties:property name="signed" type="boolean">true</properties:property>
+            <properties:property name="storageLength" type="number">2</properties:property>
+            <properties:property name="displayLength" type="number">3</properties:property>
+            <properties:property name="integerDigits" type="number">3</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">packed</properties:property>
+          </properties:properties>
+        </listructure:number>
+        <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_SC_ISS_ATH_ID" length="9" name="LS_BOAPI251_INP_SC_ISS_ATH_ID">
+          <properties:properties>
+            <properties:property name="picture" type="string">S9(9)</properties:property>
+            <properties:property name="usage" type="string">computational-3</properties:property>
+            <properties:property name="signed" type="boolean">true</properties:property>
+            <properties:property name="storageLength" type="number">5</properties:property>
+            <properties:property name="displayLength" type="number">9</properties:property>
+            <properties:property name="integerDigits" type="number">9</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">packed</properties:property>
+          </properties:properties>
+        </listructure:number>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.FILLER1" length="13" name="FILLER1">
+          <properties:properties>
+            <properties:property name="filler" type="boolean">true</properties:property>
+            <properties:property name="picture" type="string">X(13)</properties:property>
+            <properties:property name="storageLength" type="number">13</properties:property>
+            <properties:property name="displayLength" type="number">13</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X(13)</properties:property>
+          </properties:properties>
+        </listructure:string>
+      </listructure:struct>
+      <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS" name="LS_BOAPI251_PROD_IDENTIFIERS">
+        <properties:properties>
+          <properties:property name="storageLength" type="number">22</properties:property>
+          <properties:property name="displayLength" type="number">22</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+        </properties:properties>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.LS_BOAPI251_ACC_TYP" length="2" name="LS_BOAPI251_ACC_TYP">
+          <properties:properties>
+            <properties:property name="picture" type="string">XX</properties:property>
+            <properties:property name="storageLength" type="number">2</properties:property>
+            <properties:property name="displayLength" type="number">2</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">XX</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.LS_BOAPI251_ACC_TYP_S" length="1" name="LS_BOAPI251_ACC_TYP_S">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.FILLER2" length="19" name="FILLER2">
+          <properties:properties>
+            <properties:property name="filler" type="boolean">true</properties:property>
+            <properties:property name="picture" type="string">X(19)</properties:property>
+            <properties:property name="storageLength" type="number">19</properties:property>
+            <properties:property name="displayLength" type="number">19</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X(19)</properties:property>
+          </properties:properties>
+        </listructure:string>
+      </listructure:struct>
+      <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS" name="LS_BOAPI251_MISCELL_PARMS">
+        <properties:properties>
+          <properties:property name="storageLength" type="number">22</properties:property>
+          <properties:property name="displayLength" type="number">22</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+        </properties:properties>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM1" length="10" name="LS_BOAPI251_DATE_PARM1">
+          <properties:properties>
+            <properties:property name="picture" type="string">X(10)</properties:property>
+            <properties:property name="storageLength" type="number">10</properties:property>
+            <properties:property name="displayLength" type="number">10</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X(10)</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM1_S" length="1" name="LS_BOAPI251_DATE_PARM1_S">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM2" length="10" name="LS_BOAPI251_DATE_PARM2">
+          <properties:properties>
+            <properties:property name="picture" type="string">X(10)</properties:property>
+            <properties:property name="storageLength" type="number">10</properties:property>
+            <properties:property name="displayLength" type="number">10</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X(10)</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM2_S" length="1" name="LS_BOAPI251_DATE_PARM2_S">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+      </listructure:struct>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.FILLER3" length="50" name="FILLER3">
+        <properties:properties>
+          <properties:property name="filler" type="boolean">true</properties:property>
+          <properties:property name="picture" type="string">X(50)</properties:property>
+          <properties:property name="storageLength" type="number">50</properties:property>
+          <properties:property name="displayLength" type="number">50</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(50)</properties:property>
+        </properties:properties>
+      </listructure:string>
+    </listructure:struct>
+    <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS" name="LS_BOAPI251_OUTPUT_PARMS">
+      <properties:properties>
+        <properties:property name="storageLength" type="number">31321</properties:property>
+        <properties:property name="displayLength" type="number">31321</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+      </properties:properties>
+      <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_RETURN_CODE" length="4" name="LS_BOAPI251_RETURN_CODE">
+        <properties:properties>
+          <properties:property name="picture" type="string">S9(04)</properties:property>
+          <properties:property name="usage" type="string">computational-3</properties:property>
+          <properties:property name="signed" type="boolean">true</properties:property>
+          <properties:property name="storageLength" type="number">3</properties:property>
+          <properties:property name="displayLength" type="number">4</properties:property>
+          <properties:property name="integerDigits" type="number">4</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">packed</properties:property>
+        </properties:properties>
+      </listructure:number>
+      <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_SQL_CODE" length="4" name="LS_BOAPI251_SQL_CODE">
+        <properties:properties>
+          <properties:property name="picture" type="string">S9(04)</properties:property>
+          <properties:property name="usage" type="string">computational-3</properties:property>
+          <properties:property name="signed" type="boolean">true</properties:property>
+          <properties:property name="storageLength" type="number">3</properties:property>
+          <properties:property name="displayLength" type="number">4</properties:property>
+          <properties:property name="integerDigits" type="number">4</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">packed</properties:property>
+        </properties:properties>
+      </listructure:number>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_1" length="70" name="LS_BOAPI251_ERROR_MSG_1">
+        <properties:properties>
+          <properties:property name="picture" type="string">X(70)</properties:property>
+          <properties:property name="storageLength" type="number">70</properties:property>
+          <properties:property name="displayLength" type="number">70</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(70)</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_2" length="70" name="LS_BOAPI251_ERROR_MSG_2">
+        <properties:properties>
+          <properties:property name="picture" type="string">X(70)</properties:property>
+          <properties:property name="storageLength" type="number">70</properties:property>
+          <properties:property name="displayLength" type="number">70</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(70)</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_3" length="70" name="LS_BOAPI251_ERROR_MSG_3">
+        <properties:properties>
+          <properties:property name="picture" type="string">X(70)</properties:property>
+          <properties:property name="storageLength" type="number">70</properties:property>
+          <properties:property name="displayLength" type="number">70</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(70)</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_API_SQLCA" length="136" name="LS_BOAPI251_API_SQLCA">
+        <properties:properties>
+          <properties:property name="picture" type="string">X(136)</properties:property>
+          <properties:property name="storageLength" type="number">136</properties:property>
+          <properties:property name="displayLength" type="number">136</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(136)</properties:property>
+        </properties:properties>
+      </listructure:string>
+      <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA" name="LS_BOAPI251_OUTPUT_DATA">
+        <properties:properties>
+          <properties:property name="storageLength" type="number">101</properties:property>
+          <properties:property name="displayLength" type="number">101</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+        </properties:properties>
+        <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS" name="LS_BOAPI251_MAIN_SUPPLIER_DTLS">
+          <properties:properties>
+            <properties:property name="storageLength" type="number">70</properties:property>
+            <properties:property name="displayLength" type="number">70</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+          </properties:properties>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_PROD_TYPE_ID" length="9" name="LS_BOAPI251_PROD_TYPE_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(09)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">5</properties:property>
+              <properties:property name="displayLength" type="number">9</properties:property>
+              <properties:property name="integerDigits" type="number">9</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_BANK_ID" length="3" name="LS_BOAPI251_OUT_BANK_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(03)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">2</properties:property>
+              <properties:property name="displayLength" type="number">3</properties:property>
+              <properties:property name="integerDigits" type="number">3</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_SUPP_PARTY_ID" length="9" name="LS_BOAPI251_SUPP_PARTY_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(09)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">5</properties:property>
+              <properties:property name="displayLength" type="number">9</properties:property>
+              <properties:property name="integerDigits" type="number">9</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_GEOG_ZONE_ID" length="4" name="LS_BOAPI251_GEOG_ZONE_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(04)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">3</properties:property>
+              <properties:property name="displayLength" type="number">4</properties:property>
+              <properties:property name="integerDigits" type="number">4</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_BUS_TYPE_ID" length="4" name="LS_BOAPI251_BUS_TYPE_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(04)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">3</properties:property>
+              <properties:property name="displayLength" type="number">4</properties:property>
+              <properties:property name="integerDigits" type="number">4</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_BANK_INST" length="1" name="LS_BOAPI251_OUT_BANK_INST">
+            <properties:properties>
+              <properties:property name="picture" type="string">X</properties:property>
+              <properties:property name="storageLength" type="number">1</properties:property>
+              <properties:property name="displayLength" type="number">1</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">char</properties:property>
+              <properties:property name="mask" type="string">X</properties:property>
+            </properties:properties>
+          </listructure:string>
+          <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_ASSOC_ACC_FLAG" length="1" name="LS_BOAPI251_ASSOC_ACC_FLAG">
+            <properties:properties>
+              <properties:property name="picture" type="string">X</properties:property>
+              <properties:property name="storageLength" type="number">1</properties:property>
+              <properties:property name="displayLength" type="number">1</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">char</properties:property>
+              <properties:property name="mask" type="string">X</properties:property>
+            </properties:properties>
+          </listructure:string>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_SC_ISS_ATH_ID" length="9" name="LS_BOAPI251_OUT_SC_ISS_ATH_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(09)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">5</properties:property>
+              <properties:property name="displayLength" type="number">9</properties:property>
+              <properties:property name="integerDigits" type="number">9</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.FILLER4" length="45" name="FILLER4">
+            <properties:properties>
+              <properties:property name="filler" type="boolean">true</properties:property>
+              <properties:property name="picture" type="string">X(45)</properties:property>
+              <properties:property name="storageLength" type="number">45</properties:property>
+              <properties:property name="displayLength" type="number">45</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">char</properties:property>
+              <properties:property name="mask" type="string">X(45)</properties:property>
+            </properties:properties>
+          </listructure:string>
+        </listructure:struct>
+        <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPP_IND" length="1" name="LS_BOAPI251_MAIN_SUPP_IND">
+          <properties:properties>
+            <properties:property name="picture" type="string">X</properties:property>
+            <properties:property name="storageLength" type="number">1</properties:property>
+            <properties:property name="displayLength" type="number">1</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+            <properties:property name="liType" type="string">char</properties:property>
+            <properties:property name="mask" type="string">X</properties:property>
+          </properties:properties>
+        </listructure:string>
+        <listructure:struct id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS" name="LS_BOAPI251_NON_MAIN_SUPP_DTLS">
+          <properties:properties>
+            <properties:property name="storageLength" type="number">30</properties:property>
+            <properties:property name="displayLength" type="number">30</properties:property>
+            <properties:property name="platform" type="string">mainframe</properties:property>
+          </properties:properties>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_BANK_ID" length="3" name="LS_BOAPI251_N_BANK_ID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(03)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">2</properties:property>
+              <properties:property name="displayLength" type="number">3</properties:property>
+              <properties:property name="integerDigits" type="number">3</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_SUPP_PRTYID" length="9" name="LS_BOAPI251_N_SUPP_PRTYID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(09)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">5</properties:property>
+              <properties:property name="displayLength" type="number">9</properties:property>
+              <properties:property name="integerDigits" type="number">9</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:number id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_GEOG_ZONEID" length="4" name="LS_BOAPI251_N_GEOG_ZONEID">
+            <properties:properties>
+              <properties:property name="picture" type="string">S9(04)</properties:property>
+              <properties:property name="usage" type="string">computational-3</properties:property>
+              <properties:property name="signed" type="boolean">true</properties:property>
+              <properties:property name="storageLength" type="number">3</properties:property>
+              <properties:property name="displayLength" type="number">4</properties:property>
+              <properties:property name="integerDigits" type="number">4</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">packed</properties:property>
+            </properties:properties>
+          </listructure:number>
+          <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.FILLER5" length="20" name="FILLER5">
+            <properties:properties>
+              <properties:property name="filler" type="boolean">true</properties:property>
+              <properties:property name="picture" type="string">X(20)</properties:property>
+              <properties:property name="storageLength" type="number">20</properties:property>
+              <properties:property name="displayLength" type="number">20</properties:property>
+              <properties:property name="platform" type="string">mainframe</properties:property>
+              <properties:property name="liType" type="string">char</properties:property>
+              <properties:property name="mask" type="string">X(20)</properties:property>
+            </properties:properties>
+          </listructure:string>
+        </listructure:struct>
+      </listructure:struct>
+      <listructure:string id="LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.FILLER6" length="30868" name="FILLER6">
+        <properties:properties>
+          <properties:property name="filler" type="boolean">true</properties:property>
+          <properties:property name="picture" type="string">X(30868)</properties:property>
+          <properties:property name="storageLength" type="number">30868</properties:property>
+          <properties:property name="displayLength" type="number">30868</properties:property>
+          <properties:property name="platform" type="string">mainframe</properties:property>
+          <properties:property name="liType" type="string">char</properties:property>
+          <properties:property name="mask" type="string">X(30868)</properties:property>
+        </properties:properties>
+      </listructure:string>
+    </listructure:struct>
+  </listructure:struct>
+</listructure:listructure>

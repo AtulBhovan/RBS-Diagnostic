@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stub:stub xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" id="Unit%20Test/Stubs/OAPI2018_Select_2_SQL_01.stub" nextCalltoken="30003" stubtype="SQL" target="Select" token="30000">
+  <stub:description>Created: Mar 13, 2018 2:32:13 PM</stub:description>
+  <stub:stubdata id="0" name="Select">
+    <stub:interface>../Interfaces/OAPI2018_Select_2_in_WS_EFFDT.interface#Unit%20Test/Interfaces/OAPI2018_Select_2_in_WS_EFFDT.interface</stub:interface>
+    <stub:output>
+      <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_PRODUCT-TYPE-ID.listructure#PRODUCT_TYPE_ID.PRODUCT_TYPE_ID" id="output0.arg0.PRODUCT_TYPE_ID.PRODUCT_TYPE_ID">
+        <properties:properties>
+          <properties:property name="value" type="number">28</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:output>
+      <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_TERM-COND-TP-ID.listructure#TERM_COND_TP_ID.TERM_COND_TP_ID" id="output0.arg1.TERM_COND_TP_ID.TERM_COND_TP_ID">
+        <properties:properties>
+          <properties:property name="value" type="number">64</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:output>
+      <stub:data baseType="listructure:stringType ../Structures/Db2/OAPI2018/OAPI2018_Select_WS-EFFDT.listructure#WS_EFFDT.WS_EFFDT" id="output0.arg2.WS_EFFDT.WS_EFFDT">
+        <properties:properties>
+          <properties:property name="value" type="string">2018-03-13</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:output>
+      <stub:data baseType="listructure:stringType ../Structures/Db2/OAPI2018/OAPI2018_Select_WS-EFFDT.listructure#WS_EFFDT.WS_EFFDT" id="output0.arg3.WS_EFFDT.WS_EFFDT">
+        <properties:properties>
+          <properties:property name="value" type="string">2018-03-13</properties:property>
+        </properties:properties>
+      </stub:data>
+    </stub:output>
+    <stub:sqlResults>
+      <stub:result id="1" name="Select">
+        <stub:interface>../Interfaces/OAPI2018_Select_2_out_PROD_TP_CND_NM_VAL.interface#Unit%20Test/Interfaces/OAPI2018_Select_2_out_PROD_TP_CND_NM_VAL.interface</stub:interface>
+        <stub:output>
+          <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_UPPER-THRES.listructure#UPPER_THRES.UPPER_THRES" id="output1.arg0.UPPER_THRES.UPPER_THRES">
+            <properties:properties>
+              <properties:property name="value" type="number">0</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:output>
+          <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure#LOWER_THRES.LOWER_THRES" id="output1.arg1.LOWER_THRES.LOWER_THRES">
+            <properties:properties>
+              <properties:property name="value" type="number">0</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:output>
+          <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_TIME-PERIOD.listructure#TIME_PERIOD.TIME_PERIOD" id="output1.arg2.TIME_PERIOD.TIME_PERIOD">
+            <properties:properties>
+              <properties:property name="value" type="number">0</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:output>
+          <stub:data baseType="listructure:stringType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure#PROD_TP_CND_TX_VAL.PROD_TP_CND_TX_VAL" id="output1.arg3.PROD_TP_CND_TX_VAL.PROD_TP_CND_TX_VAL"/>
+        </stub:output>
+        <stub:output>
+          <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_FEATURE-TYPE.listructure#FEATURE_TYPE.FEATURE_TYPE" id="output1.arg4.FEATURE_TYPE.FEATURE_TYPE">
+            <properties:properties>
+              <properties:property name="value" type="number">0</properties:property>
+              <properties:property name="indicator" type="string">FFFF</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:output>
+          <stub:data baseType="listructure:numberType ../Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-NM-VAL.listructure#PROD_TP_CND_NM_VAL.PROD_TP_CND_NM_VAL" id="output1.arg5.PROD_TP_CND_NM_VAL.PROD_TP_CND_NM_VAL">
+            <properties:properties>
+              <properties:property name="value" type="number">25000.000</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:sqlStatus>
+          <stub:statement type="Select">
+            <stub:text>196500*****EXEC SQL
+196600*****   SELECT UPPER_THRES,
+196700*****          LOWER_THRES,
+196800*****          TIME_PERIOD,
+196900*****          PROD_TP_CND_TX_VAL,
+197000*****          FEATURE_TYPE,
+197100*****          PROD_TP_CND_NM_VAL
+197200*****
+197300*****     INTO :TOATCON.UPPER-THRES,
+197400*****          :TOATCON.LOWER-THRES,
+197500*****          :TOATCON.TIME-PERIOD,
+197600*****          :TOATCON.PROD-TP-CND-TX-VAL,
+197700*****          :TOATCON.FEATURE-TYPE :WS-FEAT-TYP-NULL-IND,
+197800*****          :TOATCON.PROD-TP-CND-NM-VAL
+197900*****
+198000*****     FROM TOATCON_TERM_COND
+198100*****
+198200*****    WHERE PRODUCT_TYPE_ID     = :TOATCON.PRODUCT-TYPE-ID
+198300*****      AND TERM_COND_TP_ID     = :TOATCON.TERM-COND-TP-ID
+198400*****      AND TERM_COND_EFDT      &lt;= :WS-EFFDT
+198500*****      AND TERM_COND_END_EFDT  >= :WS-EFFDT
+198600*****
+198700*****    FETCH FIRST ROW ONLY
+      *****END-EXEC
+</stub:text>
+          </stub:statement>
+          <stub:plist>
+            <stub:headerData>00404400001E4F415049323031381A4634F913868A710003272B9498272C1AB8272C1B7804B800E7000008DD0000000000000000000000000000000000000000</stub:headerData>
+            <stub:varRawData>E2D8D3C4C1404008000001180006000601E40D02272B967E272C1678000040404040404040404040404040404040404040404040404040404040404001E40D02272B9677272C1678000040404040404040404040404040404040404040404040404040404040404001F40002272B9675272C1678000040404040404040404040404040404040404040404040404040404040404001C4000F272B9657272C1678000040404040404040404040404040404040404040404040404040404040404001F50002272B9685272B9488000040404040404040404040404040404040404040404040404040404040404001E40F03272B964F272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+            <stub:varRawData>E2D8D3C4C1404008000000C00004000401F00004272B960C272C1678000040404040404040404040404040404040404040404040404040404040404001F40002272B9618272C1678000040404040404040404040404040404040404040404040404040404040404001C4000A272B947E272C1678000040404040404040404040404040404040404040404040404040404040404001C4000A272B947E272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+          </stub:plist>
+          <stub:sqlca callToken="30002">
+            <stub:rawData>E2D8D3C3C14040400000008800000000000040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040C4E2D54040404040000000000000000000000000FFFFFFFF00000000000000004040404040404040404040F0F0F0F0F0</stub:rawData>
+          </stub:sqlca>
+        </stub:sqlStatus>
+      </stub:result>
+    </stub:sqlResults>
+    <stub:sqlStatus>
+      <stub:statement type="Select">
+        <stub:text>196500*****EXEC SQL
+196600*****   SELECT UPPER_THRES,
+196700*****          LOWER_THRES,
+196800*****          TIME_PERIOD,
+196900*****          PROD_TP_CND_TX_VAL,
+197000*****          FEATURE_TYPE,
+197100*****          PROD_TP_CND_NM_VAL
+197200*****
+197300*****     INTO :TOATCON.UPPER-THRES,
+197400*****          :TOATCON.LOWER-THRES,
+197500*****          :TOATCON.TIME-PERIOD,
+197600*****          :TOATCON.PROD-TP-CND-TX-VAL,
+197700*****          :TOATCON.FEATURE-TYPE :WS-FEAT-TYP-NULL-IND,
+197800*****          :TOATCON.PROD-TP-CND-NM-VAL
+197900*****
+198000*****     FROM TOATCON_TERM_COND
+198100*****
+198200*****    WHERE PRODUCT_TYPE_ID     = :TOATCON.PRODUCT-TYPE-ID
+198300*****      AND TERM_COND_TP_ID     = :TOATCON.TERM-COND-TP-ID
+198400*****      AND TERM_COND_EFDT      &lt;= :WS-EFFDT
+198500*****      AND TERM_COND_END_EFDT  >= :WS-EFFDT
+198600*****
+198700*****    FETCH FIRST ROW ONLY
+      *****END-EXEC
+</stub:text>
+      </stub:statement>
+      <stub:plist>
+        <stub:headerData>00404400001E4F415049323031381A4634F913868A710003272B9498272C1AB8272C1B7804B800E7000008DD0000000000000000000000000000000000000000</stub:headerData>
+        <stub:varRawData>E2D8D3C4C1404008000001180006000601E40D02272B967E272C1678000040404040404040404040404040404040404040404040404040404040404001E40D02272B9677272C1678000040404040404040404040404040404040404040404040404040404040404001F40002272B9675272C1678000040404040404040404040404040404040404040404040404040404040404001C4000F272B9657272C1678000040404040404040404040404040404040404040404040404040404040404001F50002272B9685272B9488000040404040404040404040404040404040404040404040404040404040404001E40F03272B964F272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+        <stub:varRawData>E2D8D3C4C1404008000000C00004000401F00004272B960C272C1678000040404040404040404040404040404040404040404040404040404040404001F40002272B9618272C1678000040404040404040404040404040404040404040404040404040404040404001C4000A272B947E272C1678000040404040404040404040404040404040404040404040404040404040404001C4000A272B947E272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+      </stub:plist>
+      <stub:sqlca callToken="30001">
+        <stub:rawData>E2D8D3C3C14040400000008800000000000040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040C4E2D54040404040000000000000000000000000FFFFFFFF00000000000000004040404040404040404040F0F0F0F0F0</stub:rawData>
+      </stub:sqlca>
+    </stub:sqlStatus>
+  </stub:stubdata>
+  <stub:database version="1110"/>
+</stub:stub>

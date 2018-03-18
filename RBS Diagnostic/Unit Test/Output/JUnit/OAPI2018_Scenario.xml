@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 9:54:10 AM-->
+<testsuites>
+  <testsuite errors="0" failures="0" name="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" tests="31">
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_BANK_ID"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_SORT_CODE"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_REQ_TYPE"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_ACCOUNT_TYPE"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_REQ_TYPE_FLAG"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for FILLER0"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_ENV_FLAG"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_EFDT"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_RETURN_CODE"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_ERROR_MSG_1"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_RESULT"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_RESULT_FLAG"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_QUERY_AREA"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_OUP_SC_ISS_AUTH"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_OUP_GEOG_ZONE_ID"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_PAYU_FLAG"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_TXT_VAL"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_RISK_VAL"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_CON_CAP_VAL"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_CCA_UPR_LIM"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_COMP_THRSHLD"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_THSH_TERM"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_COMP_RATE_LWR"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_ES_LET_REQ"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_FWD_DUR"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_QT_ACT_PRD"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_PEN_INT_PRD"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_PEN_INT_ORG_TRM"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_PEN_INT_EXT_PRD"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for FILLER3"/>
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case1'" name="Check for LS_BOAPI218_LST_CTR"/>
+  </testsuite>
+  <testsuite errors="1" failures="0" name="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case2'" tests="1">
+    <testcase classname="Project: 'dt0313-2' Scenario: 'OAPI2018_Scenario' Testcase: 'OAPI2018Case2'" name="Testcase incomplete">
+      <error>Testcase has no output or output is empty.</error>
+    </testcase>
+  </testsuite>
+</testsuites>

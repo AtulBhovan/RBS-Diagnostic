@@ -1,0 +1,1306 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>OAPI2018_Scenario</title>
+		<style type="text/css">
+		  body {
+		    font:normal 68% Verdana,Arial,sans-serif;
+		    color:black;
+		  }
+		  table tr td, table tr th {
+		      font-size: 68%;
+		  }
+		  table.details tr th{
+		    font-weight: bold;
+		    font-size: 62%;
+		    text-align:left;
+		    background:#a6caf0;
+		    color: #333;
+		  }
+		  table.details tr td{
+		    background:#eeeee0;
+		  }
+		
+			h1, h2, h3, h4, h5, h6 {
+					font-weight: bold;
+					color: #333333;
+					margin-left: 4px;
+					margin-bottom: 0.5em;
+					margin-top: 2em;
+  					font-family: "HelveticaNew-Regular", "Helvetica New Regular",
+  					 "HelveticaNeue-Regular", "Helvetica Neue Regular",
+  					 Helvetica, Arial, sans-serif;			
+  			}
+			
+			h1 { font-size: 200%; font-weight: normal; margin-top: 0; line-height: 110%; color: #333; }
+			h2 { font-size:180%; margin-top:1em; }                       /* 18px */
+			h3 { font-size:160%; margin-bottom: 0; }                       
+			h4 { font-size:130.00%; margin-top: 3em; }                    
+			h5 { font-size:116.67%; margin-top: 1em; }                    
+			h6 { font-size:100.00%; }                    
+
+
+		  p {
+		    line-height:1.5em;
+		    margin-top:0.5em; margin-bottom:1.0em; margin-left: 6px;
+		    width: 94%;
+		  }
+
+		  a {
+		  		font-weight: normal;
+				color:darkblue;
+		  		text-decoration: none;
+		  }
+		
+		  a:focus,
+		  a:hover,
+		  a:active  {
+		  		background:inherit;
+        		color:blue;
+		  		text-decoration:underline;
+		  		outline: 0 none;
+		}
+
+         a.top {
+         		font-size: x-small;
+         		font-variant: small-caps;
+         		padding-top: 1em;
+         		display: none;
+         }
+          .summary {
+          	font-weight: bold; color: #333;	
+          }
+		  .Error {
+		    font-weight:bold; color:red;
+		  }
+		  .Failure {
+		    font-weight:normal; color:red;
+		  }
+		  .Properties {
+		    text-align:right;
+		  }
+		  .success100 {
+		  	color: darkgreen;
+		  }
+		  .note {
+		    color: #666; 
+		    font-style: italic;
+		  }
+		.pg-normal {
+			color: #000000;
+			font-size: 15px;
+			cursor: pointer;
+			background: #a6caf0;
+			padding: 2px 4px 2px 4px;
+		}
+		
+		.pg-selected {
+			color: #fff;
+			font-size: 15px;
+			background: #000000;
+			padding: 2px 4px 2px 4px;
+		}
+		
+		table.stubpage {
+			text-align: left;
+			color: #333;
+			border-spacing: 2px;
+		}
+		
+		table.stubpage th {
+			padding: 5px;
+			height: auto;
+		}
+		
+		table.stubpage th a {
+			text-decoration: none;
+			padding-right: 20px;
+			white-space: nowrap;
+		}
+		
+		table.stubpage tr th {
+		    font-weight: bold;
+			font-size: 62%;
+			text-align: left;
+			background: #a6caf0;
+			color: #333;
+		}
+		
+		table.stubpage tr td {
+			background: #eeeee0;
+		}
+		</style>
+		<script type="text/javascript">
+
+        var shownDivId;
+    	function toggleTable(idname) {
+    		var div = document.getElementById(idname);
+    		
+    		if (shownDivId != null && shownDivId != idname) {
+    			var divShown = document.getElementById(shownDivId);
+    			divShown.style.display = 'none';
+    		}
+    		
+    	    if (div.style.display != 'none') {
+      	        div.style.display = 'none';
+    	    }  else {
+    	        div.style.display = 'block';
+    	        shownDivId = idname;
+    	        smoothScroll(div);
+    	    }
+		}
+		
+		window.smoothScroll = function(target) {
+		    var scrollContainer = target;
+		    do { //find scroll container
+		        scrollContainer = scrollContainer.parentNode;
+		        if (!scrollContainer) return;
+		        scrollContainer.scrollTop += 1;
+		    } while (scrollContainer.scrollTop == 0);
+		
+		    var targetY = 0;
+		    do { //find the top of target relatively to the container
+		        if (target == scrollContainer) break;
+		        targetY += target.offsetTop;
+		    } while (target = target.offsetParent);
+		
+		    scroll = function(c, a, b, i) {
+		        i++; if (i > 30) return;
+		        c.scrollTop = a + (b - a) / 30 * i;
+		        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+		    }
+   		 // start scrolling
+    	scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+      </script>
+	  <script type="text/javascript">
+		
+		function Pager(tableName, itemsPerPage, name) {
+		
+		this.tableName = tableName;
+		
+		this.itemsPerPage = itemsPerPage;
+		
+		this.pagerName = name;
+		
+		this.currentPage = 1;
+		
+		this.pages = 0;
+		
+		this.inited = false;
+		
+		this.showRecords = function(from, to) {
+		
+		var rows = document.getElementById(tableName).rows;
+		
+		// i starts from 1 to skip table header row
+		
+		for (var i = 1; i < rows.length; i++) {
+		
+		if (i < from || i > to)
+		
+		rows[i].style.display = 'none';
+		
+		else
+		
+		rows[i].style.display = '';
+		
+		}
+		
+		}
+		
+		this.showPage = function(pageNumber) {
+		
+			if (shownDivId != null) {
+				var divShown = document.getElementById(shownDivId);
+				divShown.style.display = 'none';
+			}
+			
+			
+			if (! this.inited) {
+			
+			//alert("not inited");
+			
+			return;
+			
+			}
+			
+			var oldPageAnchor = document.getElementById('pg'+ this.pagerName + this.currentPage);
+			
+			if ( oldPageAnchor != null ) {
+				oldPageAnchor.className = 'pg-normal';
+			}
+			
+			this.currentPage = pageNumber;
+			
+			var newPageAnchor = document.getElementById('pg' + this.pagerName + this.currentPage);
+			
+			if (newPageAnchor != null) {
+				newPageAnchor.className = 'pg-selected';
+			}
+			
+			var from = (pageNumber - 1) * itemsPerPage + 1;
+			
+			var to = from + itemsPerPage - 1;
+			
+			this.showRecords(from, to);
+			
+		}
+			
+		this.prev = function() {
+			
+			if (this.currentPage > 1)
+			
+			this.showPage(this.currentPage - 1);
+		
+		}
+		
+		this.next = function() {
+		
+		if (this.currentPage < this.pages) {
+		
+		this.showPage(this.currentPage + 1);
+		
+		}
+		
+		}
+		
+		this.init = function() {
+		
+		var rows = document.getElementById(tableName).rows;
+		
+		var records = (rows.length - 1);
+		
+		this.pages = Math.ceil(records / itemsPerPage);
+		
+		this.inited = true;
+		
+		}
+		
+		this.showPageNav = function(pagerName, positionId) {
+		
+		if (! this.inited) {
+		
+		////alert("not inited");
+		
+		return;
+		
+		}
+		
+		var element = document.getElementById(positionId);
+		
+		var pagerHtml = '<span id="pg' + this.pagerName + 'prev" onclick="' + pagerName + '.prev();" class="pg-normal"> Prev </span> &nbsp;';
+		
+		for (var page = 1; page <= this.pages; page++)
+		
+		pagerHtml += '<span id="pg' + this.pagerName + page + '" class="pg-normal" onclick="' + pagerName + '.showPage(' + page + ');">' + page + '</span> ';
+		
+		pagerHtml += '<span id="pg' + this.pagerName + 'next" onclick="'+pagerName+'.next();" class="pg-normal"> Next </span>';
+		
+		element.innerHTML = pagerHtml;
+		//alert(pagerHtml);
+		}
+		
+		}
+		
+		</script>
+		<script type="text/javascript" language="JavaScript">
+        var TestCases = new Array();
+        var cur;
+  <xsl:template match="properties">
+    cur = TestCases['OAPI2018_Scenario.OAPI2018Case1'] = new Array();
+    cur = TestCases['OAPI2018_Scenario.OAPI2018Case2'] = new Array();
+       	</script>
+       	<script type="text/javascript" language="JavaScript"><![CDATA[
+			function displayProperties (name) {
+			  var win = window.open('','JUnitSystemProperties','scrollbars=1,resizable=1');
+			  var doc = win.document;
+			  doc.open();
+			  doc.write("<html><head><title>Properties of " + name + "</title>");
+			  doc.write("<style>");
+			  doc.write("body {font:normal 68% verdana,arial,helvetica; color:#000000; }");
+			  doc.write("table tr td, table tr th { font-size: 68%; }");
+			  doc.write("table.properties { border-collapse:collapse; border-left:solid 1 #cccccc; border-top:solid 1 #cccccc; padding:5px; }");
+			  doc.write("table.properties th { text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#eeeeee; }");
+			  doc.write("table.properties td { font:normal; text-align:left; border-right:solid 1 #cccccc; border-bottom:solid 1 #cccccc; background-color:#fffffff; }");
+			  doc.write("h3 { margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica }");
+			  doc.write("</style>");
+			  doc.write("</head><body>");
+			  doc.write("<h3>Properties of " + name + "</h3>");
+			  doc.write("<div align=\"right\"><a href=\"javascript:window.close();\">Close</a></div>");
+			  doc.write("<table class='properties'>");
+			  doc.write("<tr><th>Name</th><th>Value</th></tr>");
+			  for (prop in TestCases[name]) {
+			    doc.write("<tr><th>" + prop + "</th><td>" + TestCases[name][prop] + "</td></tr>");
+			  }
+			  doc.write("</table>");
+			  doc.write("</body></html>");
+			  doc.close();
+			  win.focus();
+			}
+      	]]>
+      	</script>
+	</head>
+	<body style="overflow:auto;">
+		<a name="top"></a>
+    	<table width="100%">
+		    <tr valign="top">
+		        <td align="left">
+		        <h1> OAPI2018_Scenario Result Report</h1>
+		        <p class="note">
+		        Failures are anticipated and checked for in check conditions <br />Errors are unanticipated problems
+		        </p>
+		        </td>
+		        <td align="right"></td>
+		    </tr>
+    	</table>
+    	<hr size="1"/>
+		<!-- Summary part -->			
+		<h2>Test Project dt0313-2 </h2>
+        <h2>Test Suite Summary</h2>
+        <p>
+	    <b></b>
+        <br />
+        </p>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+        <tr valign="top">
+            <th width="20%" nowrap="nowrap">Name</th>
+            <th>Tests</th>
+            <th>Failures</th>
+            <th>Errors</th>
+            <th>Success rate</th>
+            <th>Time stamp</th>
+            <th>Job ID</th>
+            <th>System</th>
+        </tr>
+        <tr valign="top">
+            <td nowrap="nowrap"><a href="#{testsuite:Unit%20Test%5C.temp/OAPI2018_Scenario.testsuite}">OAPI2018_Scenario</a></td>
+            <td class="summary">31</td>
+            <td class="summary">0</td>
+            <td class="summary">1</td> 		
+			<td class="summary">96%</td>        		  
+            <td>2018-03-14 08:49:45</td>
+		    <td>TTYAE01L(JOB53060)</td> 
+		    <td>QAOS LPAR</td>  
+        </tr>
+        </table>
+        <!-- Test scenarios -->
+        <h3>Test Scenarios</h3>
+        <p class="note">
+        Note: scenario statistics are not computed recursively, they only sum up all of its test case numbers.
+        </p>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+        	<tr valign="top">
+		        <th width="80%">Name</th>
+		        <th>Tests</th>
+		        <th>Failures</th>
+		        <th>Errors</th>
+		        <th>Success&nbsp;rate</th>
+		   <!--     
+		        <th nowrap="nowrap">Time(s)</th>
+		        <th nowrap="nowrap">Time Stamp</th>
+		        <th>Host</th>
+		   -->     
+		    </tr>
+            <!-- list all packages recursively -->
+                <!-- write a summary for the package -->
+                <tr valign="top" class="Error"> 
+                    <td><a href="#{testscenario:Unit%20Test/Scenarios/OAPI2018_Scenario.testscenario}">OAPI2018_Scenario</a></td>
+                    <td>31</td>
+                    <td>0</td>
+                    <td>1</td> 		
+                    <td>96%</td>
+                </tr>
+        </table>
+        <a name="#{testscenario:OAPI2018_Scenario}"></a>
+        <h4>OAPI2018_Scenario Test Scenario</h4>
+	    <p>
+	    <b></b>
+	    <br />
+	    </p>
+        <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
+            <tr valign="top">
+		        <th width="80%">Test Case</th>
+		        <th>Tests</th>
+		        <th>Failures</th>
+		        <th>Errors</th>
+		        <th>Success&nbsp;rate</th>
+		    </tr>
+
+            <!-- match the testsuites of this package -->
+            <!-- class information -->       
+                <!-- write a summary for the package -->
+				<tr valign="top"> 
+		
+		        <!-- print testcase information -->
+		        <td><a href="#{testscenario:Unit%20Test/Scenarios/OAPI2018_Scenario.testscenario}{testcase:Unit%20Test/Scenarios/OAPI2018_Scenario.testscenario%23OAPI2018Case1}">OAPI2018Case1</a></td>
+		        <td>31</td>
+                <td>0</td>
+                <td>0</td> 		
+                <td><span class="success100">100%</span></td>
+		    </tr>       
+                <!-- write a summary for the package -->
+                <tr valign="top" class="Error"> 
+		
+		        <!-- print testcase information -->
+		        <td><a href="#{testscenario:Unit%20Test/Scenarios/OAPI2018_Scenario.testscenario}{testcase:Unit%20Test/Scenarios/OAPI2018_Scenario.testscenario%23OAPI2018Case2}">OAPI2018Case2</a></td>
+		        <td>0</td>
+                <td>0</td>
+                <td>1</td> 		
+                <td>n/a</td>
+		    </tr>
+        </table>
+        <a href="#top" class="top">^ Back to top</a></div>
+  
+    <h5 style="margin-left: 20px;">OAPI2018Case1 Test Case Details</h5>
+	
+			<h6 style="margin-left: 20px;">Output Assertion</h6>
+			<table class="details" border="0" cellpadding="5" cellspacing="2" width="90%" style="margin-left: 20px;">
+			<tr valign="top">
+			    <th>Check Condition</th>
+			    <th>Status</th>
+			    <th width="30%">Message</th>
+			    <th width="18%">Expected</th>
+			    <th width="18%">Actual</th>
+			</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_BANK_ID</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_SORT_CODE</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_REQ_TYPE</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_ACCOUNT_TYPE</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_REQ_TYPE_FLAG</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for FILLER0</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_ENV_FLAG</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_EFDT</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_RETURN_CODE</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_ERROR_MSG_1</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_RESULT</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_RESULT_FLAG</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_QUERY_AREA</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_OUP_SC_ISS_AUTH</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_OUP_GEOG_ZONE_ID</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_PAYU_FLAG</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_TXT_VAL</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_RISK_VAL</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_CON_CAP_VAL</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_CCA_UPR_LIM</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_COMP_THRSHLD</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_THSH_TERM</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_COMP_RATE_LWR</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_ES_LET_REQ</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_FWD_DUR</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_QT_ACT_PRD</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_PEN_INT_PRD</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_PEN_INT_ORG_TRM</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_PEN_INT_EXT_PRD</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for FILLER3</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+<tr valign="top"> 
+					    <td>Check for LS_BOAPI218_LST_CTR</td>
+						<td>Success</td>
+						<td>
+					
+					
+					
+					         
+					         
+					</td>
+					<td>
+					
+					
+					
+					</td>
+					
+					<td>
+					
+					
+					
+					</td>
+				</tr>
+			
+			</table>
+	 <!-- end of Output Assertion -->  <!-- 3 -->
+<h6 style="margin-left: 20px;">Stubs Executed</h6>
+	<table class="details" cellpadding="5" cellspacing="2" width="90%"
+		style="margin-left: 20px;" id="s1_c1_r">
+		<tr valign="top">
+			<th width="85%">Stub</th>
+		
+			<th>Target  </th>
+			<th>Records</th>
+		</tr>
+	
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_OAPI2051_01.stub}">OAPI2018_OAPI2051_01</a></td>
+					<td>OAPI2051</td>
+					<td>2</td>
+				
+		
+			    
+		    </tr>
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_Select_1_SQL_01.stub}">OAPI2018_Select_1_SQL_01</a></td>
+					<td>Select</td>
+					<td>1</td>
+				
+		
+			    
+		    </tr>
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_Select_2_SQL_01.stub}">OAPI2018_Select_2_SQL_01</a></td>
+					<td>Select</td>
+					<td>1</td>
+				
+		
+			    
+		    </tr>  	 
+	</table>	    <!-- end of stub -->  <!-- end of if -->
+  
+    <h5 style="margin-left: 20px;">OAPI2018Case2 Test Case Details</h5>
+	
+			<h6 style="margin-left: 20px;">Output Assertion</h6>
+			<table class="details" border="0" cellpadding="5" cellspacing="2" width="90%" style="margin-left: 20px;">
+			<tr valign="top">
+			    <th>Check Condition</th>
+			    <th>Status</th>
+			    <th width="30%">Message</th>
+			    <th width="18%">Expected</th>
+			    <th width="18%">Actual</th>
+			</tr>
+			
+<tr valign="top" class="Error"> 
+					    <td>Testcase incomplete</td>
+						<td>Error</td>
+						<td>
+					
+					Testcase has no output or output is empty.
+					         
+					</td>
+					<td>
+					
+					null null
+					
+					</td>
+					
+					<td>
+					
+					null
+					
+					</td>
+				</tr>
+			
+			</table>
+	 <!-- end of Output Assertion -->  <!-- 3 -->
+<h6 style="margin-left: 20px;">Stubs Executed</h6>
+	<table class="details" cellpadding="5" cellspacing="2" width="90%"
+		style="margin-left: 20px;" id="s1_c1_r">
+		<tr valign="top">
+			<th width="85%">Stub</th>
+		
+			<th>Target  </th>
+			<th>Records</th>
+		</tr>
+	
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_OAPI2051_01.stub}">OAPI2018_OAPI2051_01</a></td>
+					<td>OAPI2051</td>
+					<td>2</td>
+				
+		
+			    
+		    </tr>
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_Select_1_SQL_01.stub}">OAPI2018_Select_1_SQL_01</a></td>
+					<td>Select</td>
+					<td>1</td>
+				
+		
+			    
+		    </tr>
+			 	<tr valign="top">   
+
+					<!-- printstub information -->
+					<td><a href="#{stub:Unit%20Test/Stubs/OAPI2018_Select_2_SQL_01.stub}">OAPI2018_Select_2_SQL_01</a></td>
+					<td>Select</td>
+					<td>1</td>
+				
+		
+			    
+		    </tr>  	 
+	</table>	    <!-- end of stub -->  <!-- end of if -->
+
+<p/>
+<a href="#top" class="top">^ Back to top</a>
+<p>&nbsp;</p>
+<p class="note">Report generated by Topaz for Total Test. For product details go to www.compuware.com</p>
+	</body>
+</html>

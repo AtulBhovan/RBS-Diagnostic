@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stub:stub xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:stub="http://www.compuware.com/model/xml/stub" alias="" id="Unit%20Test/Stubs/OAPI2018_Select_1_SQL_01.stub" nextCalltoken="10003" stubtype="SQL" target="Select" token="10000">
+  <stub:description>Created: Mar 13, 2018 2:29:12 PM</stub:description>
+  <stub:stubdata id="0" name="Select">
+    <stub:sqlResults>
+      <stub:result id="1" name="Select">
+        <stub:interface>../Interfaces/OAPI2018_Select_1_WS_EFFDT.interface#Unit%20Test/Interfaces/OAPI2018_Select_1_WS_EFFDT.interface</stub:interface>
+        <stub:output>
+          <stub:data baseType="listructure:stringType ../Structures/Db2/OAPI2018/OAPI2018_Select_WS-EFFDT.listructure#WS_EFFDT.WS_EFFDT" id="output1.arg0.WS_EFFDT.WS_EFFDT">
+            <properties:properties>
+              <properties:property name="value" type="string">2018-03-13</properties:property>
+            </properties:properties>
+          </stub:data>
+        </stub:output>
+        <stub:sqlStatus>
+          <stub:statement type="Select">
+            <stub:text>047200*****  EXEC SQL
+047300*****      SELECT CURRENT DATE
+047400*****        INTO :WS-EFFDT
+047500*****        FROM SYSIBM.SYSDUMMY1
+      *****  END-EXEC
+</stub:text>
+          </stub:statement>
+          <stub:plist>
+            <stub:headerData>00400400001E4F415049323031381A4634F913868A710002272B949800000000272C16E804B800E7000002F10000000000000000000000000000000000000000</stub:headerData>
+            <stub:varRawData>E2D8D3C4C14040080000003C0001000101C4000A272B947E272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+          </stub:plist>
+          <stub:sqlca callToken="10002">
+            <stub:rawData>E2D8D3C3C14040400000008800000000000040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040C4E2D54040404040000000000000000000000000FFFFFFFF00000000000000004040404040404040404040F0F0F0F0F0</stub:rawData>
+          </stub:sqlca>
+        </stub:sqlStatus>
+      </stub:result>
+    </stub:sqlResults>
+    <stub:sqlStatus>
+      <stub:statement type="Select">
+        <stub:text>047200*****  EXEC SQL
+047300*****      SELECT CURRENT DATE
+047400*****        INTO :WS-EFFDT
+047500*****        FROM SYSIBM.SYSDUMMY1
+      *****  END-EXEC
+</stub:text>
+      </stub:statement>
+      <stub:plist>
+        <stub:headerData>00400400001E4F415049323031381A4634F913868A710002272B949800000000272C16E804B800E7000002F10000000000000000000000000000000000000000</stub:headerData>
+        <stub:varRawData>E2D8D3C4C14040080000003C0001000101C4000A272B947E272C16780000404040404040404040404040404040404040404040404040404040404040</stub:varRawData>
+      </stub:plist>
+      <stub:sqlca callToken="10001">
+        <stub:rawData>E2D8D3C3C14040400000008800000000000040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040C4E2D54040404040000000000000000000000000FFFFFFFF00000000000000004040404040404040404040F0F0F0F0F0</stub:rawData>
+      </stub:sqlca>
+    </stub:sqlStatus>
+  </stub:stubdata>
+  <stub:database version="1110"/>
+</stub:stub>

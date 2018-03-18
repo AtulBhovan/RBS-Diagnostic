@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:13 PM-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_LOWER-THRES.listructure">
+  <listructure:struct id="LOWER_THRES" name="LOWER_THRES">
+    <properties:properties>
+      <properties:property name="storageLength" type="number">7</properties:property>
+      <properties:property name="displayLength" type="number">7</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+    </properties:properties>
+    <listructure:number id="LOWER_THRES.LOWER_THRES" length="13" name="LOWER_THRES">
+      <properties:properties>
+        <properties:property name="picture" type="string">S9(11)V9(2)</properties:property>
+        <properties:property name="usage" type="string">computational-3</properties:property>
+        <properties:property name="signed" type="boolean">true</properties:property>
+        <properties:property name="scale" type="number">2</properties:property>
+        <properties:property name="storageLength" type="number">7</properties:property>
+        <properties:property name="displayLength" type="number">13</properties:property>
+        <properties:property name="integerDigits" type="number">11</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="sqltype" type="number">484</properties:property>
+        <properties:property name="liType" type="string">packed</properties:property>
+      </properties:properties>
+    </listructure:number>
+  </listructure:struct>
+</listructure:listructure>

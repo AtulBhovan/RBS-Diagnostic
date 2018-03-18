@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:29:19 PM-->
+<interface:interface xmlns:interface="http://www.compuware.com/model/xml/interface" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" alias="" id="Unit%20Test/Interfaces/OAPI2018_OAPI2051.interface">
+  <interface:description></interface:description>
+  <interface:argument listructure="../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#Unit%20Test/Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure">
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_DFHEIBLK">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYP_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_ENV_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_BUS_TYP_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.FILLER0">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYPE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_REQ_TYPE_S">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_SUPP_ID_COMBO_TYP">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BANK_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_SORTCODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BRND_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_BANK_INST">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_REGION_NO">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.LS_BOAPI251_INP_SC_ISS_ATH_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_SUPP_IDENTIFIERS.FILLER1">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.LS_BOAPI251_ACC_TYP">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.LS_BOAPI251_ACC_TYP_S">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_PROD_IDENTIFIERS.FILLER2">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM1">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM1_S">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM2">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.LS_BOAPI251_MISCELL_PARMS.LS_BOAPI251_DATE_PARM2_S">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_INPUT_PARMS.FILLER3">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_RETURN_CODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_SQL_CODE">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_1">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_2">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_ERROR_MSG_3">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_API_SQLCA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_PROD_TYPE_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_BANK_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_SUPP_PARTY_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_GEOG_ZONE_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_BUS_TYPE_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_BANK_INST">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_ASSOC_ACC_FLAG">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.LS_BOAPI251_OUT_SC_ISS_ATH_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPPLIER_DTLS.FILLER4">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_MAIN_SUPP_IND">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:structType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_BANK_ID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_SUPP_PRTYID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:numberType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.LS_BOAPI251_N_GEOG_ZONEID">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.LS_BOAPI251_OUTPUT_DATA.LS_BOAPI251_NON_MAIN_SUPP_DTLS.FILLER5">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+    <interface:baseTypeExtension baseType="listructure:stringType ../Structures/OAPI2018_OAPI2051_LS-OAPI2051-API-PARMS.listructure#LS_OAPI2051_API_PARMS.LS_BOAPI251_OUTPUT_PARMS.FILLER6">
+      <properties:properties>
+        <properties:property name="usage" type="string">inout</properties:property>
+      </properties:properties>
+    </interface:baseTypeExtension>
+  </interface:argument>
+</interface:interface>

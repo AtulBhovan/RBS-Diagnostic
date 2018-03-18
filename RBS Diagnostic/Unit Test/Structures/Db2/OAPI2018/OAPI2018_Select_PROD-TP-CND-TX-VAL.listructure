@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 18.2.3.v20170915-1548_36?>
+<!--Topaz for Total Test 18.2.3.v20170915-1548_36 Mar 13, 2018 2:32:13 PM-->
+<listructure:listructure xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" id="Unit%20Test/Structures/Db2/OAPI2018/OAPI2018_Select_PROD-TP-CND-TX-VAL.listructure">
+  <listructure:struct id="PROD_TP_CND_TX_VAL" name="PROD_TP_CND_TX_VAL">
+    <properties:properties>
+      <properties:property name="storageLength" type="number">15</properties:property>
+      <properties:property name="displayLength" type="number">15</properties:property>
+      <properties:property name="platform" type="string">mainframe</properties:property>
+    </properties:properties>
+    <listructure:string id="PROD_TP_CND_TX_VAL.PROD_TP_CND_TX_VAL" length="15" name="PROD_TP_CND_TX_VAL">
+      <properties:properties>
+        <properties:property name="picture" type="string">X(15)</properties:property>
+        <properties:property name="storageLength" type="number">15</properties:property>
+        <properties:property name="displayLength" type="number">15</properties:property>
+        <properties:property name="platform" type="string">mainframe</properties:property>
+        <properties:property name="sqltype" type="number">452</properties:property>
+        <properties:property name="liType" type="string">char</properties:property>
+        <properties:property name="mask" type="string">X(15)</properties:property>
+      </properties:properties>
+    </listructure:string>
+  </listructure:struct>
+</listructure:listructure>
